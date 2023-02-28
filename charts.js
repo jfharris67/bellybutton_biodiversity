@@ -106,7 +106,7 @@ var bubbleLayout = {
   title: "Bacteria Cultures Per Sample",
   xaxis: { title: "OTU ID" },
   hovermode: "closest",
-  margin: { t: 30 }
+  margin: { t: 60 }
 };
 
 // Deliverable 2: 3. Use Plotly to plot the data with the layout.
@@ -134,10 +134,15 @@ var gaugeData = [  {    domain: { x: [0, 1], y: [0, 1] },
 
 // Deliverable 3: 5. Create the layout for the gauge chart.
 var gaugeLayout = { 
-  width: 600, height: 500, margin: { t: 0, b: 0 } 
+  width: 500, 
+  height: 400, 
+  margin: { t: 40, b: 0 },
+  title: { text: "Belly Button Washing Frequency", font: { size: 16, weight: "bold" } },
+  font: { size: 12 }
 };
 
 // Deliverable 3: 6. Use Plotly to plot the gauge data and layout.
 Plotly.newPlot("gauge", gaugeData, gaugeLayout);
+
 });
 }

@@ -92,7 +92,7 @@ var barData = [  {    x: sampleValues.slice(0, 10).reverse(),    y: yticks,    t
 // Deliverable 1: 9. Create the layout for the bar chart. 
 var barLayout = {
   title: "Top 10 Bacteria Cultures Found",
-  margin: { t: 30, l: 150 }
+  margin: { t: 60, l: 150 }
 };
 
 // Deliverable 1: 10. Use Plotly to plot the data with the layout. 

@@ -1,0 +1,43 @@
+/* Define custom colors using hexadecimal notation */
+:root {
+    --primary-color: #3F51B5;
+    --secondary-color: #FF9800;
+    --success-color: #4CAF50;
+    --warning-color: #FFEB3B;
+    --danger-color: #F44336;
+  }
+  
+  /* Apply custom colors to various elements */
+  body {
+    background-color: #f2f2f2;
+  }
+  
+  .jumbotron {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  .panel-primary {
+    border-color: var(--primary-color);
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+  }
+  
+  .btn-warning {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+  }
+  
+  .btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+  }
+  

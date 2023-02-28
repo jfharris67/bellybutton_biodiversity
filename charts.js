@@ -136,8 +136,8 @@ var gaugeData = [  {    domain: { x: [0, 1], y: [0, 1] },
 var gaugeLayout = { 
   width: 500, 
   height: 400, 
-  margin: { t: 40, b: 0 },
-  title: { text: "Belly Button Washing Frequency", font: { size: 16, weight: "bold" } },
+  margin: { t: 0, l: 50, r: 50, b: 0 },
+  title: { text: "Belly Button Washing Frequency", font: { size: 24, weight: "bold" } },
   font: { size: 12 }
 };
 

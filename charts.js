@@ -97,8 +97,8 @@ var barLayout = {
     text: "This bar chart shows the top 10 samples of bacteria (OTUs)<br>found in the test subject's navel",
     xref: "paper",
     yref: "paper",
-    x: 0,
-    y: -0.3,
+    x: 0.5,
+    y: -0.25,
     showarrow: false,
     font: {
       size: 14,
@@ -106,6 +106,7 @@ var barLayout = {
     }
   }]
 };
+
 
 
 // Deliverable 1: 10. Use Plotly to plot the data with the layout. 
@@ -121,7 +122,7 @@ var bubbleLayout = {
   hovermode: "closest",
   margin: { t: 60, b: 100 },
   annotations: [{
-    text: "This bubble chart displays the test subject's bacterial information. The size of the bubble visually shows the amount of bacteria found",
+    text: "This bubble chart displays the test subject's bacterial information. The size of the bubble visually shows the amount of bacteria found.",
     xref: "paper",
     yref: "paper",
     x: 0,
@@ -141,7 +142,7 @@ Plotly.newPlot("bubble", bubbleData, bubbleLayout);
 // Deliverable 3: 4. Create the trace for the gauge chart.
 var gaugeData = [  {    domain: { x: [0, 1], y: [0, 1] },
     value: washingFrequency,
-    title: { text: "Belly Button Washing Frequency" + '<br>' + "Scrubs per Week"},
+    title: { text: "<b>Belly Button Washing Frequency</b> <br>Scrubs per Week", color: "black", font: {size: 24}},
     type: "indicator",
     mode: "gauge+number",
     gauge: {
@@ -158,17 +159,16 @@ var gaugeData = [  {    domain: { x: [0, 1], y: [0, 1] },
   }
 ];
 
-// Deliverable 3: 5. Create the layout for the gauge chart.
 var gaugeLayout = { 
   width: 450,
-  height: 370,
+  height: 400,
   margin: { t:0, b:0},
   annotations: [{
-    text: "This gauge shows how many times<br>the test subject washes their navel per week",
+    text: "This gauge shows how many times the test subject washes their navel per week",
     xref: "paper",
     yref: "paper",
     x: 0.5,
-    y: -0.15,
+    y: -0.05,
     showarrow: false,
     font: {
       size: 14,

@@ -92,9 +92,9 @@ var barData = [  {    x: sampleValues.slice(0, 10).reverse(),    y: yticks,    t
 // Deliverable 1: 9. Create the layout for the bar chart. 
 var barLayout = {
   title: "Top 10 Bacteria Cultures Found",
-  margin: { t: 60, l: 150 },
+  margin: { t: 60, l: 150, b: 100 },
   annotations: [{
-    text: "This bar chart shows the top 10 samples of bacteria (OTUs)<br> found in the test subjects navel",
+    text: "This bar chart shows the top 10 samples of bacteria (OTUs)<br>found in the test subject's navel",
     xref: "paper",
     yref: "paper",
     x: 0,
@@ -107,6 +107,7 @@ var barLayout = {
   }]
 };
 
+
 // Deliverable 1: 10. Use Plotly to plot the data with the layout. 
 Plotly.newPlot("bar", barData, barLayout);
 
@@ -118,7 +119,7 @@ var bubbleLayout = {
   title: "Bacteria Cultures Per Sample",
   xaxis: { title: "OTU ID" },
   hovermode: "closest",
-  margin: { t: 60 },
+  margin: { t: 60, b: 100 },
   annotations: [{
     text: "This bubble chart displays the test subject's bacterial information. The size of the bubble visually shows the amount of bacteria found",
     xref: "paper",
@@ -132,6 +133,7 @@ var bubbleLayout = {
     }
   }]
 };
+
 
 // Deliverable 2: 3. Use Plotly to plot the data with the layout.
 Plotly.newPlot("bubble", bubbleData, bubbleLayout);
@@ -162,11 +164,11 @@ var gaugeLayout = {
   height: 370,
   margin: { t:0, b:0},
   annotations: [{
-    text: "This gauge shows how many times the test subject washes their navel per week",
+    text: "This gauge shows how many times<br>the test subject washes their navel per week",
     xref: "paper",
     yref: "paper",
     x: 0.5,
-    y: 0.5,
+    y: -0.15,
     showarrow: false,
     font: {
       size: 14,

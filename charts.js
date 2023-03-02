@@ -174,7 +174,7 @@ var gaugeLayout = {
     xanchor: 'center',
     y: 0,
     yanchor: 'center',
-    text: "This gauge shows how many times the test subject washes their navel per week",
+    text: "This gauge shows how many times the test<br>subject washes their navel per week",
     showarrow: false
   }]
 };

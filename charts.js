@@ -160,20 +160,16 @@ var gaugeData = [  {    domain: { x: [0, 1], y: [0, 1] },
 ];
 
 var gaugeLayout = { 
-  width: 450,
-  height: 450,
-  margin: { t:0, b:70},
+  autosize: true,
   annotations: [{
-    text: "This gauge shows how many times the test subject washes their navel per week",
-    xref: "paper",
-    yref: "paper",
+    xref: 'paper',
+    yref: 'paper',
     x: 0.5,
-    y: -0.25,
-    showarrow: false,
-    font: {
-      size: 14,
-      color: "black"
-    }
+    xanchor: 'center',
+    y: 0,
+    yanchor: 'center',
+    text: "This gauge shows how many times the test subject washes their navel per week",
+    showarrow: false
   }]
 };
 

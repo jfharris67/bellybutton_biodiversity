@@ -101,7 +101,7 @@ var barLayout = {
     y: -0.25,
     showarrow: false,
     font: {
-      size: 14,
+      size: 12,
       color: "black"
     }
   }]
@@ -129,7 +129,7 @@ var bubbleLayout = {
     y: -0.3,
     showarrow: false,
     font: {
-      size: 14,
+      size: 12,
       color: "black"
     }
   }]
@@ -161,14 +161,14 @@ var gaugeData = [  {    domain: { x: [0, 1], y: [0, 1] },
 
 var gaugeLayout = { 
   width: 450,
-  height: 370,
+  height: 400,
   margin: { t:0, b:50},
   annotations: [{
     text: "This gauge shows how many times the test subject washes their navel per week",
     xref: "paper",
     yref: "paper",
     x: 0.5,
-    y: -0.1,
+    y: -0.2,
     showarrow: false,
     font: {
       size: 14,

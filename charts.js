@@ -161,14 +161,14 @@ var gaugeData = [  {    domain: { x: [0, 1], y: [0, 1] },
 
 var gaugeLayout = { 
   width: 450,
-  height: 400,
-  margin: { t:0, b:50},
+  height: 450,
+  margin: { t:0, b:70},
   annotations: [{
     text: "This gauge shows how many times the test subject washes their navel per week",
     xref: "paper",
     yref: "paper",
     x: 0.5,
-    y: -0.2,
+    y: -0.25,
     showarrow: false,
     font: {
       size: 14,

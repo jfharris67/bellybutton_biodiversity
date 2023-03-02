@@ -140,21 +140,27 @@ var bubbleLayout = {
 Plotly.newPlot("bubble", bubbleData, bubbleLayout);
 
 // Deliverable 3: 4. Create the trace for the gauge chart.
-var gaugeData = [  {    domain: { x: [0, 1], y: [0, 1] },
-    value: washingFrequency,
-    title: { text: "<b>Belly Button Washing Frequency</b> <br>Scrubs per Week", color: "black", font: {size: 24}},
+var gaugeTrace = [
+  {
+    domain: { x: [0, 1], y: [0, 1] },
+    value: washFreq,
+    title: { text: "<b>Belly Button Washing Frequency</b><br>Scrubs per week"},
     type: "indicator",
     mode: "gauge+number",
     gauge: {
-      axis: { range: [null, 10] },
-      bar: { color: "black" },
+      axis: {
+        range: [null, 10],
+        tickmode: "array",
+        tickvals: [0,2,4,6,8,10],
+        ticktext: [0,2,4,6,8,10]
+      },
+      bar: {color: "black"},
       steps: [
         { range: [0, 2], color: "red" },
         { range: [2, 4], color: "orange" },
         { range: [4, 6], color: "yellow" },
         { range: [6, 8], color: "lime" },
-        { range: [8, 10], color: "green" },
-      ]
+        { range: [8, 10], color: "green" }]
     }
   }
 ];

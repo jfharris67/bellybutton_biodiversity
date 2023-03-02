@@ -94,7 +94,7 @@ var barLayout = {
   title: "Top 10 Bacteria Cultures Found",
   margin: { t: 60, l: 150, b: 100 },
   annotations: [{
-    text: "This bar chart shows the top 10 samples of bacteria (OTUs)<br>found in the test subject's navel",
+    text: "This bar chart shows the top 10 samples of<br>bacteria (OTUs)found in the test subject's navel",
     xref: "paper",
     yref: "paper",
     x: 0.5,
@@ -161,14 +161,14 @@ var gaugeData = [  {    domain: { x: [0, 1], y: [0, 1] },
 
 var gaugeLayout = { 
   width: 450,
-  height: 400,
-  margin: { t:0, b:0},
+  height: 370,
+  margin: { t:0, b:50},
   annotations: [{
     text: "This gauge shows how many times the test subject washes their navel per week",
     xref: "paper",
     yref: "paper",
     x: 0.5,
-    y: -0.05,
+    y: -0.1,
     showarrow: false,
     font: {
       size: 14,
@@ -176,6 +176,7 @@ var gaugeLayout = {
     }
   }]
 };
+
 
 
 // Deliverable 3: 6. Use Plotly to plot the gauge data and layout.

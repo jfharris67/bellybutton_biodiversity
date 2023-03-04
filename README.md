@@ -16,4 +16,10 @@ The website provides volunteers with the ability to access information concernin
 
 To view the demographic information and relevant visualizations of your bacterial sample test, select your test subject ID from the dropdown menu.
 
-<img width="1159" alt="Belly_Button_Biodiversity" src="https://user-images.githubusercontent.com/114355199/222900035-280c961c-a10e-4eb1-b838-493f0262f688.png">
+### Improvements since prior release (Deliverable 4)
+- Added Image to jumbotron
+- Changed background color to light blue
+- Added information to each visualization describing what the visualization itself represents
+
+
+<img width="1162" alt="Website Screenshot" src="https://user-images.githubusercontent.com/114355199/222901336-0c83a6e9-8580-4aee-a5df-46253d815629.png">
